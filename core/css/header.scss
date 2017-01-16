@@ -309,19 +309,6 @@
 
 /* USER MENU -----------------------------------------------------------------*/
 
-/* info part on the right, used e.g. for info on who shared something */
-
-.header-right {
-	position: absolute;
-	right: 0;
-	padding: 7px 5px;
-	color: #fff;
-	height: 100%;
-	max-width: 80%;
-	white-space: nowrap;
-	box-sizing: border-box;
-}
-
 /* Profile picture in header */
 
 #header .avatardiv {
@@ -414,7 +401,8 @@
 #header {
 	#header-left,
 	#header-right {
-		display: flex;
+		display: inline-flex;
+		align-items: center;
 	}
 
 	#header-left {
@@ -423,7 +411,6 @@
 	}
 
 	#header-right {
-		display: flex;
 		justify-content: flex-end;
 	}
 
